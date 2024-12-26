@@ -9,7 +9,7 @@
     {
         "name": "Personal Servers",
         "github": "https://github.com/Storce/kerrigan-nix-config",
-        "description": "Personal servers comprised of a NixOS PC, a Debian VM, a rasberry pi, and my personal devices. Runs a few services, including this website.",
+        "description": "Personal servers comprised of a NixOS PC, a Debian VM, a rasberry pi, and my personal devices. Runs a few services, including a Discord bot and this website.",
         "date": "Jun. 2024",
         "tools": "Python, Bash, Nginx, Docker, NixOS,"
     },
@@ -19,5 +19,12 @@
         "description": "MkDocs documentation website for the Open Computiong Facility with automatic syncing from internal docs",
         "date": "Oct. 2024",
         "tools": "Python, Bash, Nginx, Docker"
+    },
+    {
+        "name": "Portfolio Project (internship project, private)",
+        "github": "https://joewang.me",
+        "description": "Projection on 100k+ credit contracts with ML and visualization modules.",
+        "date": "May. 2024",
+        "tools": "Python, Pandas, Django, GCP, BigQuery"
     }
 ]
