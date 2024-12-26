@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # joewang.me
 my personal website
 =======
