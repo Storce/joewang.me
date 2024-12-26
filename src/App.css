@@ -3,19 +3,18 @@ nav {
   background-color: #d2b48c;
   /* Darker brown color to stand out */
   padding: 1.5rem;
-  /* Removed padding at the top */
   display: flex;
   gap: 2rem;
   padding-top: 1rem;
-  padding-left: 30rem;
-  /* Increased padding to make the nav bar wider */
-  padding-right: 30rem;
-  /* Increased padding to make the nav bar wider */
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
   justify-content: center;
   /* Center the nav bar */
   position: relative;
+  margin-top: 1rem;
+  /* Add space between the top edge and the nav bar */
 }
 
 nav::before {
@@ -49,4 +48,29 @@ div {
   align-items: center;
   /* Center all content */
   justify-content: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+  }
+
+  .heading2 {
+    font-size: 1.2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .italic-subtitle {
+    font-size: 1rem;
+  }
 }

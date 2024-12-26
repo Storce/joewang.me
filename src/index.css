@@ -35,18 +35,35 @@ a:hover {
 }
 
 nav {
-  background-color: #d2b48c;
+  background-color: #f2cfa0;
   /* Darker brown color to stand out */
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  /* Added padding at the top */
+  padding: 1.5rem;
   display: flex;
   gap: 2rem;
-  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
   justify-content: center;
   /* Center the nav bar */
+  position: relative;
+  margin-top: 1rem;
+  /* Add space between the top edge and the nav bar */
+  width: 120%;
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  /* Adjust height as needed */
+  left: 0;
+  right: 0;
+  height: 1.5rem;
+  /* Adjust height as needed */
+  background-color: #f5f5dc;
+  /* Same color as the background */
 }
 
 nav a {
@@ -70,3 +87,102 @@ div {
 }
 
 /* Add any additional styles below */
+.heading1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.heading2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.italic-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  /* Make the italic class less bold */
+}
+
+.contact-box {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.contact-box button {
+  padding: 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  /* Add underline to button text */
+  /* Use the paragraph font weight */
+  background-color: #f5f5dc;
+  border: 2px solid #d2b48c00;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-box button:hover {
+  background-color: #d2b48c;
+  color: #ffffff;
+}
+
+.buddy-box {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buddy-box img {
+  width: 50px;
+  height: 50px;
+  margin: 0.5rem;
+}
+
+.project-box {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #ffe9a6;
+  border: 2px solid #8B4513;
+  border-radius: 10px;
+  width: 130%;
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+  }
+
+  .heading2 {
+    font-size: 1.2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .italic-subtitle {
+    font-size: 1rem;
+  }
+
+  .project-box {
+    width: 100%;
+  }
+}

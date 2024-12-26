@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Open Computing Facility",
+        "github": "https://github.com/ocf",
+        "description": "Regular contributions to the Open Computing Facility.",
+        "date": "Oct. 2024",
+        "tools": "Python, Bash, Puppet, NixOS, Networking Tools, Kubernetes, Prometheus"
+    },
+    {
+        "name": "Personal Servers",
+        "github": "https://github.com/Storce/kerrigan-nix-config",
+        "description": "Personal servers comprised of a NixOS PC, a Debian VM, a rasberry pi, and my personal devices. Runs a few services, including this website.",
+        "date": "Jun. 2024",
+        "tools": "Python, Bash, Nginx, Docker, NixOS,"
+    },
+    {
+        "name": "MkDocs documentation",
+        "github": "https://github.com/ocf/ocfdocs",
+        "description": "MkDocs documentation website for the Open Computiong Facility with automatic syncing from internal docs",
+        "date": "Oct. 2024",
+        "tools": "Python, Bash, Nginx, Docker"
+    }
+]
