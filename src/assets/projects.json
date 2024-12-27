@@ -28,10 +28,10 @@
         "tools": "Python, Pandas, Django, GCP, BigQuery"
     },
     {
-        "name": "React Website",
+        "name": "Personal Website",
         "github": "https://github.com/Storce/joewangme",
-        "description": "The current website, written with React and Vite.",
+        "description": "The current website, written with React and Vite, deployed with Github CI/CD",
         "date": "Decem. 2024",
-        "tools": "Javascript, CSS, React"
+        "tools": "Javascript, CSS, React, Github Actions"
     }
 ]
