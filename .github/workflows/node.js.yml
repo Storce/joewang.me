@@ -47,7 +47,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0 #  Apprently template people use this a lot...?
         with:
           host: ${{ secrets.SSH_HOST }}
-          user: ${ secrets.SSH_USER }}
+          user: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: 'build-dist/*'
           target: ~/public_html
