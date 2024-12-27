@@ -12,7 +12,7 @@ function Project() {
     return (
         <div style={{ padding: '1rem', maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
             <h1 className="heading1" style={{ marginBottom: '0rem' }}>My Projects</h1> {/* Apply heading1 class */}
-            <p className="italic-subtitle" style={{ marginBottom: '2rem' }}>Click on title for repo link</h1> {/* Apply heading1 class */}
+            <p className="italic-subtitle" style={{ marginBottom: '2rem' }}>Click on title for repo link</p> {/* Apply heading1 class */}
             {projects.map((project, index) => (
                 <div key={index} className="project-box">
                     <h2 className="heading2" style={{ marginTop: '-0.5rem', marginBottom: '-1rem' }}>
