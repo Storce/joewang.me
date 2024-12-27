@@ -3,25 +3,25 @@
         "name": "Open Computing Facility",
         "github": "https://github.com/ocf",
         "description": "Regular contributions to the Open Computing Facility.",
-        "date": "Oct. 2024",
-        "tools": "Python, Bash, Puppet, NixOS, Networking Tools, Kubernetes, Prometheus"
+        "date": "Dec. 2023",
+        "tools": "Python, Bash, Puppet, NixOS, Networking Tools, Docker, Kubernetes, Prometheus."
     },
     {
         "name": "Personal Servers",
         "github": "https://github.com/Storce/kerrigan-nix-config",
-        "description": "Personal servers comprised of a NixOS PC, a Debian VM, a Rasberry Pi, and my various personal devices. Run a few services, including a Discord bot and this website.",
+        "description": "Personal servers comprised of a NixOS PC, a Debian VM, a Rasberry Pi, and my various personal devices. Run a few services, including a Discord bot and a few websites.",
         "date": "Jun. 2024",
         "tools": "Python, Bash, Nginx, Docker, NixOS,"
     },
     {
         "name": "MkDocs documentation",
         "github": "https://github.com/ocf/ocfdocs",
-        "description": "MkDocs documentation website for the Open Computiong Facility with automatic syncing from internal docs",
+        "description": "MkDocs documentation website for the Open Computiong Facility with automatic syncing from internal docs, containerized and deployed.",
         "date": "Oct. 2024",
         "tools": "Python, Bash, Nginx, Docker"
     },
     {
-        "name": "Portfolio Project (internship project, private)",
+        "name": "Portfolio Projection (internship project, private)",
         "github": "https://joewang.me",
         "description": "Projection on 100k+ credit contracts with ML and visualization modules.",
         "date": "May. 2024",
@@ -30,7 +30,7 @@
     {
         "name": "Personal Website",
         "github": "https://github.com/Storce/joewangme",
-        "description": "The current website, written with React and Vite, deployed with Github CI/CD",
+        "description": "The current website, written with React and Vite, deployed with Github CI/CD.",
         "date": "Decem. 2024",
         "tools": "Javascript, CSS, React, Github Actions"
     }
