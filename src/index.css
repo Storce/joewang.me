@@ -88,22 +88,22 @@ div {
 
 /* Add any additional styles below */
 .heading1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
 .heading2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .paragraph {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
 .italic-subtitle {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-style: italic;
   font-weight: 500;
   /* Make the italic class less bold */
@@ -117,7 +117,7 @@ div {
 
 .contact-box button {
   padding: 0.5rem 0.5rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: underline;
   /* Add underline to button text */
@@ -167,19 +167,19 @@ div {
   }
 
   .heading1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .heading2 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 
   .paragraph {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .italic-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .project-box {
