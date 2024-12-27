@@ -43,7 +43,7 @@ nav {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   justify-content: center;
   /* Center the nav bar */
@@ -88,7 +88,7 @@ div {
 
 /* Add any additional styles below */
 .heading1 {
-  font-size: 2.2rem;
+  font-size: 2.0rem;
   font-weight: bold;
 }
 
