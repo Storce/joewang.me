@@ -27,8 +27,6 @@ jobs:
       with:
         name: build-dist
         path: dist
-    - run: ls -l
-    - run: ls dist
 
   deploy:
     needs: build
@@ -42,14 +40,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-dist
-      - run: ls -l
-      - name: Deploy to OCF via ssh
-        uses: appleboy/ssh-action@v1.2.0 #  Apprently template people use this a lot...?
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          source: 'build-dist/*'
-          target: ~/public_html
-    
-      
+          
+      - name: Load ssh key
+        run: echo ${{ secrets.SSH_KEY }} > ssh_key.txt
+        
+      - name: Sync folders
+        run: rsync -zv -e 'ssh -i ssh_key.txt' build-dist ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/public_html
+        
+      - name: Clean key
+        run: rm ssh_key.txt
