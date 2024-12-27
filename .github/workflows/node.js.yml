@@ -43,4 +43,4 @@ jobs:
       - run: sudo apt install sshpass
       - name: Sync folders
         run: 
-          sshpass -p "${{ secrets.SSH_PASSWD }}" rsync -zv -e "ssh -o StrictHostKeyChecking=no" build-dist "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/public_html"
+          sshpass -p "${{ secrets.SSH_PASSWD }}" rsync -zvr -e "ssh -o StrictHostKeyChecking=no" build-dist/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/public_html"
