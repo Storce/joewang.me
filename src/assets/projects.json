@@ -9,7 +9,7 @@
     {
         "name": "Personal Servers",
         "github": "https://github.com/Storce/kerrigan-nix-config",
-        "description": "Personal servers comprised of a NixOS PC, a Debian VM, a rasberry pi, and my various personal devices. Run a few services, including a Discord bot and this website.",
+        "description": "Personal servers comprised of a NixOS PC, a Debian VM, a Rasberry Pi, and my various personal devices. Run a few services, including a Discord bot and this website.",
         "date": "Jun. 2024",
         "tools": "Python, Bash, Nginx, Docker, NixOS,"
     },
