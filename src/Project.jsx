@@ -10,7 +10,7 @@ function Project() {
     }, []);
 
     return (
-        <div style={{ padding: '1rem', maxWidth: '600px', margin: '0 auto', textAlign: 'left' }}>
+        <div style={{ padding: '1rem', maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
             <h1 className="heading1" style={{ marginBottom: '2rem' }}>My Projects</h1> {/* Apply heading1 class */}
             {projects.map((project, index) => (
                 <div key={index} className="project-box">
