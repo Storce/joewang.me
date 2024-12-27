@@ -43,6 +43,6 @@ jobs:
           
       - name: Sync folders
         run: |
-          rsync -zv -e "ssh -o StrictHostKeyChecking=no -i /dev/stdin" build-dist "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/public_html" <<EOF
-          ${{ secrets.SSH_KEY }}
+          rsync -zv -e "ssh -o StrictHostKeyChecking=no" build-dist "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/public_html" <<EOF
+          ${{ secrets.SSH_PASSWD }}
           EOF
