@@ -28,6 +28,12 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - uses: actions/upload-artifact@v4
+      with:
+        name: build-dist
+        path: dist
+    - run: ls -l
+    - run: ls dist
 
   deploy:
     needs: build
@@ -36,13 +42,19 @@ jobs:
     environment:
       name: deployment
 
-    step:
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-dist
+      - run: ls -l
       - name: Deploy to OCF via ssh
         uses: appleboy/ssh-action@v0.1.17 #  Apprently template people use this a lot...?
         with:
           host: ${{ secrets.SSH_HOST }}
           user: ${ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-    
+          source: 'build-dist/*'
+          target: ~/public_html
     
       
