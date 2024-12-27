@@ -44,7 +44,7 @@ jobs:
           name: build-dist
       - run: ls -l
       - name: Deploy to OCF via ssh
-        uses: appleboy/ssh-action@v0.1.17 #  Apprently template people use this a lot...?
+        uses: appleboy/ssh-action@v1.2.0 #  Apprently template people use this a lot...?
         with:
           host: ${{ secrets.SSH_HOST }}
           user: ${ secrets.SSH_USER }}
