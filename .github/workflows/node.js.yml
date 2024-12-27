@@ -44,6 +44,7 @@ jobs:
       - name: Load ssh key
         run: echo "${{ secrets.SSH_KEY }}" > ssh_key.txt
       - run: cat ssh_key.txt
+      - run: chmod 600 ssh_key.txt
         
       - name: Sync folders
         run: rsync -zv -e 'ssh -o StrictHostKeyChecking=no -i ssh_key.txt' build-dist ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/public_html
