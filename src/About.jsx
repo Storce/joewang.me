@@ -6,10 +6,10 @@ function About() {
         <div style={{ padding: '1rem', maxWidth: '600px', margin: '0 auto', textAlign: 'center', width: '100%', boxSizing: 'border-box' }}> {/* Limit the width of the text box and justify text */}
             <h1 className="heading1" style={{ marginBottom: '0.5rem' }}>About Me</h1> {/* Apply heading1 class */}
             <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                 I am a Computer Science enthusiast currently residing in the U.S., Berkeley, CA. I've also lived in Shanghai (China) and São Paulo (Brazil) at different moments of my life. I speak fluent Portuguese, Mandarin, English, some intermediate Spanish, and Shanghainese.
+                 I am a Computer Science student currently residing in the U.S., Berkeley, CA. I've also lived in Shanghai (China) and São Paulo (Brazil) at different moments of my life. I speak fluent Portuguese, Mandarin, English, some intermediate Spanish, and Shanghainese.
             </p>
             <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                I am really into <b>Linux</b> and <b>computer systems and infrastructure</b>. I run my own homelab and teach a class on system administration. I also really like mathematics and have competed in olympiads at national levels.
+                I am really into <b>Linux</b> and <b>computer systems and infrastructure</b>. I run my own homelab and teach a class on system administration. I also really like mathematics and have competed in olympiads at national levels. Some cool classes I've enjoyed at Berkeley are EE120 Signal Processing, and EE122 Communication Networks.
             </p>
             <p className="paragraph" style={{ marginBottom: '1rem' }}>
                 I do a lot of things for the{' '}
@@ -28,7 +28,7 @@ function About() {
                     rel="noopener noreferrer"
                     style={{ color: '#007BFF', textDecoration: 'none' }} // Optional: Customize link appearance
                 >
-                    repo
+                    Github
                 </a>
                 ), where I spend an unhealthy amount of time. As of January 2024, I serve as the Co-General Manager, contributing both technically and administratively.
             </p>
